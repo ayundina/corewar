@@ -10,11 +10,11 @@ This is what is looks like in action:
 
 ![Corewar](https://github.com/ayundina/corewar/blob/master/resources/gif/191115_1702_corewar.gif)
 
-**1. Game board.**<br/> 
+**1. Game board.**<br/><br/>
 The memory of our virtual computer. It’s represented in a 64 X 64 grid of bytes. Every byte, the pairs of numbers or letters, are represented in hexadecimal. Each hexadecimal has the value of a digit, from 0 to 255. The values represent commands and command's arguments. There are 16 commands.<br/> 
-**2. Players.**<br/>
+**2. Players.**<br/><br/>
 Small programs represented in different colors. The white parts have blank memory.<br/>
-**3. Cursors.**<br/>
+**3. Cursors.**<br/><br/>
 The moving parts with inverted color. They read from the game board.
 The cursors have a couple of features. They can jump on the game board, store and write values, and clone themselves. The cursors belong to no-one, they just read from the game board.When the game starts, all players have one cursor at the beginning of their program. The game advances as the cursors read the commands stored in their programs. If a cursor ends up on a faulty command or a blank memory, it moves to the next byte.
 <br/>
