@@ -21,12 +21,12 @@ The moving parts with inverted color. They read from the game board.
 The cursors have a couple of features. They can jump on the game board, store and write values, and clone themselves. The cursors belong to no-one, they just read from the game board.When the game starts, all players have one cursor at the beginning of their program. The game advances as the cursors read the commands stored in their programs. If a cursor ends up on a faulty command or a blank memory, it moves to the next byte.
 <br/>
 <br/>
-**Player wins if he is the last one to declare himself alive**<br/>
+**Player wins if he is the last one to declare himself alive.**<br/>
 If a cursor reads a players life command from the game board, it stays alive for one round. Every game round is measured in cycles. "Cycles to die" determine how much each cursor can read from the game board within one round. Cycles to die gradually decrese, until it reaches zero. At that point game ends and a winner is announced.
 
 # Usage
 
-To run the game, run these commands:
+To download, build and launch the game:
 
 ```
 git clone https://github.com/ayundina/corewar.git
@@ -34,8 +34,8 @@ cd corewar/
 make
 ./virtual_machine/corewar -ncurses ./champions/the_destructor.cor ./resources/champs/examples/bee_gees.cor
 ```
-Press 'space' key to pause
-Press 'q' key when the game is over to exit the visual mode. 
+Press 'space' key to pause.<br/>
+Press 'q' key when the game is over, to exit the visual mode.<br/>
 To view usage message, launch without arguments:
 ```
 ./virtual_machine/corewar
