@@ -21,7 +21,6 @@ void		display_help(void)
 	ft_putstr("	-ncurses: visual mode. Visualizes the game ");
 	ft_putstr("| can't be used with -v or -dump together\n");
 	ft_putstr("	-d N	: dump flag. Dumps memory after N cycles and exits\n");
-	ft_putstr("	-help	: help flag. Shows usage details\n");
 	ft_putstr("	-n N	: player's order.");
 	ft_putstr(" Sets N's ID number of the next player");
 	ft_putstr(". N is min. 1 and max. 4 \n");

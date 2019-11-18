@@ -43,6 +43,5 @@ Usage:	./corewar [-v | -ncurses | -d N | -help] [-n N] champion1.cor [-n N] cham
 	-v	: verbose mode. Shows cursor's execution details
 	-ncurses: visual mode. Visualizes the game | can't be used with -v or -dump together
 	-d N	: dump flag. Dumps memory after N cycles and exits
-	-help	: help flag. Shows usage details
 	-n N	: player's order. Sets N's ID number of the next player. N is min. 1 and max. 4
 ```
