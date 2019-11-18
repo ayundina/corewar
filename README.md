@@ -8,7 +8,7 @@ The idea was simple. You compete by designing viruses to overtake a computer. Yo
 
 This is what is looks like in action:
 
-![Corewar](https://github.com/ayundina/corewar/blob/master/resources/gif/191115_1702_corewar.gif)
+![corewar.gif](https://github.com/ayundina/corewar/blob/master/resources/gif/191115_1702_corewar.gif)
 
 **1. Game board.**<br/>
 The memory of our virtual computer. It’s represented in a 64 X 64 grid of bytes. Every byte, the pairs of numbers or letters, are represented in hexadecimal. Each hexadecimal has the value of a digit, from 0 to 255. The values represent commands and command's arguments. There are 16 commands.<br/>
@@ -24,3 +24,25 @@ The cursors have a couple of features. They can jump on the game board, store an
 **Player wins if he is the last one to declare himself alive**<br/>
 If a cursor reads a players life command from the game board, it stays alive for one round. Every game round is measured in cycles. "Cycles to die" determine how much each cursor can read from the game board within one round. Cycles to die gradually decrese, until it reaches zero. At that point game ends and a winner is announced.
 
+# Usage
+
+To run the game, run these commands:
+
+```
+git clone https://github.com/ayundina/corewar.git
+cd corewar/
+make
+./virtual_machine/corewar -ncurses ./champions/the_destructor.cor ./resources/champs/examples/bee_gees.cor
+```
+Press 'space' key to pause
+Press 'q' key when the game is over to exit the visual mode. 
+To view usage message, launch without arguments:
+```
+./virtual_machine/corewar
+Usage:	./corewar [-v | -ncurses | -d N | -help] [-n N] champion1.cor [-n N] champion2.cor [-n N] champion3.cor [-n N] champion4.cor
+-v	: verbose mode. Shows cursor's execution details
+-ncurses: visual mode. Visualizes the game | can't be used with -v or -dump together
+-d N	: dump flag. Dumps memory after N cycles and exits
+-help	: help flag. Shows usage details
+-n N	: player's order. Sets N's ID number of the next player. N is min. 1 and max. 4
+```
