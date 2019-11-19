@@ -29,16 +29,16 @@ If a cursor reads a players life command from the game board, it stays alive for
 To download, build and launch the game:
 
 ```
-git clone https://github.com/ayundina/corewar.git
-cd corewar/
-make
-./virtual_machine/corewar -ncurses ./champions/the_destructor.cor ./resources/champs/examples/bee_gees.cor
+$ git clone https://github.com/ayundina/corewar.git
+$ cd corewar/
+$ make
+$ ./virtual_machine/corewar -ncurses ./champions/the_destructor.cor ./resources/champs/examples/bee_gees.cor
 ```
 Press 'space' key to pause.<br/>
 Press 'q' key when the game is over, to exit the visual mode.<br/>
 To view usage message, launch without arguments:
 ```
-./virtual_machine/corewar
+$ ./virtual_machine/corewar
 Usage:	./corewar [-v | -ncurses | -d N | -help] [-n N] champion1.cor [-n N] champion2.cor [-n N] champion3.cor [-n N] champion4.cor
 	-v	: verbose mode. Shows cursor's execution details
 	-ncurses: visual mode. Visualizes the game | can't be used with -v or -dump together
